@@ -4,9 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { Observer1Component } from './rxjs/observer1/observer1.component';
+import { Observer2Component } from './rxjs/observer2/observer2.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Observer1Component,
+    Observer2Component
   ],
   imports: [
     BrowserModule,
