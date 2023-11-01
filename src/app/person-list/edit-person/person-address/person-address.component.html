@@ -1,0 +1,19 @@
+<form [formGroup]="address">
+  <div>
+    <label for="county">County:</label>
+    <input type="text" id="county" name="county" formControlName="county">
+  </div>
+  <div>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" formControlName="city">
+  </div>
+  <div>
+    <label for="district">District:</label>
+    <p *ngIf="district.errors">{{district.errors['customs']}}</p>
+    <input type="text" id="district" name="district" formControlName="district">
+  </div>
+  <div>
+    <label for="flat">Flat:</label>
+    <input type="number" id="flat" name="flat" formControlName="flat">
+  </div>
+</form>

@@ -1,0 +1,15 @@
+<form>
+  <input type="text" [formControl]="searchControl">
+</form>
+<ul>
+  <li *ngFor="let person of filterPerson">
+    <p>Name: {{person.firstname}}</p>
+    <p>Lastname: {{person.lastname}}</p>
+    <p>Age: {{person.age}}</p>
+    <p>Email: {{person.email}}</p>
+    <button (click)="deletePerson(person.id)">delete</button>
+    <button (click)="editPerson(person)">edit</button>
+  </li>
+</ul>
+
+<app-edit-person [editingPerson]="editingPerson" (submit)="submit($event)"></app-edit-person>
