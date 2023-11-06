@@ -1,34 +1,30 @@
 <div class="test">
-  <form class="insideTest">
+  <form [formGroup]="myForm" class="insideTest">
     <div class="insideTestTest">
-      <label>E-mail:</label>
-      <input type="text">
+      <label [ngClass]="{'errorLabel':myForm.get('email')?.errors}"><h6 class="to" *ngIf="myForm.get('email')?.errors">*</h6>E-mail:</label>
+      <input [ngClass]="{'error':myForm.get('email')?.errors}" formControlName="email" type="email">
+      <p *ngIf="myForm.get('email')?.errors">t</p>
     </div>
     <div class="insideTestTest">
       <label>Password:</label>
-      <input type="text">
+      <input formControlName="password" type="password">
     </div>
     <div class="insideTestTest">
       <label>Confirm Password:</label>
-      <input type="text">
+      <input type="password" (blur)="checkConfirmPassrod()" formControlName="confirmPassword">
     </div>
+
     <div class="insideTestTest">
       <label>Nickname:</label>
-      <input type="text">
+      <input type="text" formControlName="nickName">
     </div>
     <div class="insideTestTest">
       <label>Phone Number</label>
-      <input type="number">
+      <input type="text"  formControlName="phoneNumber">
     </div>
     <div class="insideTestTest">
       <label>Website</label>
-      <input type="text">
-    </div>
-    <div class="insideTestTest">
-      <div class="checkBox">
-        <input type="checkbox">
-        <label>I have read the agreement</label>
-      </div>
+      <input type="text" >
     </div>
   </form>
 </div>
