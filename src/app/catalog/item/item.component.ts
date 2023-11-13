@@ -13,7 +13,8 @@ import {ItemServiceService} from "./item-service.service";
 })
 export class ItemComponent implements OnInit {
 
-  @Input() product: Product | null = null;
+  //@ts-ignore
+  @Input() product: Product;
 
   countFC = new FormControl('');
 
