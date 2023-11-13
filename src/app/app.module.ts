@@ -10,13 +10,15 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { ItemComponent } from './catalog/item/item.component';
 import { CartComponent } from './cart/cart.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { CommentsComponent } from './catalog/item/comments/comments.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CatalogComponent,
     ItemComponent,
-    CartComponent
+    CartComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
