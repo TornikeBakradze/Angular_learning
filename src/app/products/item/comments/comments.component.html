@@ -1,0 +1,5 @@
+<ng-container *ngIf="comments$|async as comments">
+    <div *ngFor="let comment of comments">
+        <p *ngIf="comment.productId==product?.id">{{comment.text}}</p>
+    </div>
+</ng-container>

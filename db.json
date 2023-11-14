@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Iphone 13",
+      "price": 3000
+    },
+    {
+      "id": 2,
+      "title": "Iphone 14",
+      "price": 3500
+    },
+    {
+      "id": 3,
+      "title": "Samsung s22",
+      "price": 1899
+    },
+    {
+      "id": 4,
+      "title": "xiaomi poco",
+      "price": 300
+    },
+    {
+      "id": 5,
+      "title": "Nokia lumia 625",
+      "price": 50
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "productId": 1,
+      "text": "Nice product"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "text": "Nice product"
+    },
+    {
+      "id": 3,
+      "productId": 2,
+      "text": "Great product rate: 4"
+    },
+    {
+      "id": 4,
+      "productId": 3,
+      "text": "Excellent product rate: 5"
+    },
+    {
+      "id": 5,
+      "productId": 4,
+      "text": "Good product rate: 3"
+    },
+    {
+      "id": 6,
+      "productId": 5,
+      "text": "Awesome product rate: 5"
+    },
+    {
+      "id": 7,
+      "productId": 2,
+      "text": "Superb product rate: 4"
+    },
+    {
+      "id": 8,
+      "productId": 1,
+      "text": "Fantastic product rate: 5"
+    },
+    {
+      "id": 9,
+      "productId": 2,
+      "text": "Impressive product rate: 4"
+    },
+    {
+      "id": 10,
+      "productId": 1,
+      "text": "Satisfactory product rate: 3"
+    },
+    {
+      "id": 11,
+      "productId": 5,
+      "text": "Outstanding product rate: 5"
+    },
+    {
+      "id": 12,
+      "productId": 4,
+      "text": "Decent product rate: 3"
+    },
+    {
+      "id": 13,
+      "productId": 3,
+      "text": "Remarkable product rate: 5"
+    }
+  ]
+}

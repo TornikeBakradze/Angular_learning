@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Observer2Component } from './observer2.component';
+import { CommentsComponent } from './comments.component';
 
-describe('Observer2Component', () => {
-  let component: Observer2Component;
-  let fixture: ComponentFixture<Observer2Component>;
+describe('CommentsComponent', () => {
+  let component: CommentsComponent;
+  let fixture: ComponentFixture<CommentsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Observer2Component]
+      declarations: [CommentsComponent]
     });
-    fixture = TestBed.createComponent(Observer2Component);
+    fixture = TestBed.createComponent(CommentsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
