@@ -92,5 +92,12 @@
       "productId": 3,
       "text": "Remarkable product rate: 5"
     }
+  ],
+  "user": [
+    {
+      "username": "test",
+      "password": "test",
+      "token": "testToken"
+    }
   ]
 }

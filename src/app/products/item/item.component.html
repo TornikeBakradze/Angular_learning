@@ -2,3 +2,5 @@
 <img src="https://picsum.photos/300/200?random={{product?.id}}" alt="Random Image">
 <p>{{product?.price}}</p>
 <app-comments [product]="product"></app-comments>
+<p [routerLink]="['/products',product?.id]">detail info</p>
+<!--<app-product-view></app-product-view>-->

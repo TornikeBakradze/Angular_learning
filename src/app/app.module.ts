@@ -11,6 +11,8 @@ import { CommentsComponent } from './products/item/comments/comments.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import { ProductViewComponent } from './products/product-view/product-view.component';
+import {ProductViewService} from "./products/product-view/product-view.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import {RouterModule} from "@angular/router";
     ProductsComponent,
     ItemComponent,
     CommentsComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ProductViewComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,10 @@ import {RouterModule} from "@angular/router";
       {
         path:"products",
         component:ProductsComponent
+      },
+      {
+        path:"products/:id",
+        component:ProductViewService
       },
       {
         path:'',
