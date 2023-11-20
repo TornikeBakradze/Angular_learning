@@ -19,6 +19,7 @@ export class AuthenticationService {
           const user=users.filter(u=>u.username==username&&u.password==password)[0]
           if(user){
             localStorage.setItem('token',user.token)
+            localStorage.setItem("isAdmin",<string>user.isAdmin?.toString())
             this.router.navigate(['products'])
           }else {
             alert('invalid username or password  ')
@@ -32,5 +33,6 @@ export class AuthenticationService {
 export interface User{
   username:string,
   password:string,
-  token:string
+  token:string,
+  isAdmin?:boolean
 }

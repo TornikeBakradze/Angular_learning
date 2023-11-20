@@ -16,10 +16,10 @@ export class ItemComponent implements OnInit {
     }
 
     ngOnInit(): void {
-    }
+}
 
 
-    getById(id:number){
+getById(id:number){
       this.productService.getByID(id);
     }
 }

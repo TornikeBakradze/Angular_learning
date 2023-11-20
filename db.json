@@ -98,6 +98,11 @@
       "username": "test",
       "password": "test",
       "token": "testToken"
+    },{
+      "username": "admin",
+      "password": "admin",
+      "token": "adminToken",
+      "isAdmin": true
     }
   ]
 }

@@ -1,4 +1,11 @@
-<button>Back</button>
-<button>Next Product</button>
-<img src="https://picsum.photos/300/200?random" alt="Random Image" style="display: block">
+
+<ng-container *ngIf="products|async as product">
+<button routerLink="/products">Back</button>
+<button [routerLink]="['/products',product?.id]"> Next Product</button>
+  <p>{{product.title}}</p>
+  <img src="https://picsum.photos/300/200?random={{product?.id}}" alt="Random Image">
+  <p>{{product.price}}</p>
+
+<!--</ng-container>-->
+
 

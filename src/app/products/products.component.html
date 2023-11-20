@@ -1,5 +1,5 @@
 <div class="logout">
-  <p>Log Out</p>
+  <p (click)="logOut()">Log Out</p>
 </div>
 <div class="container">
   <ng-container *ngIf="products$|async as products">
@@ -8,5 +8,3 @@
     </div>
   </ng-container>
 </div>
-
-<!--<app-product-view></app-product-view>-->
